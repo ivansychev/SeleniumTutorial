@@ -1,0 +1,6 @@
+#Intelij Idea
+.idea
+SeleniumTutorial.iml
+
+#Maven
+target
