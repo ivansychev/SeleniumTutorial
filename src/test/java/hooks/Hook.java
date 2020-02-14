@@ -11,10 +11,8 @@ import resources.Driver;
 
 public class Hook {
 
-
     @Before
-    public static void setup() throws Exception {
-
+    public static void setup() {
         ChromeOptions driverOptions = new ChromeOptions();
         driverOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
@@ -24,7 +22,7 @@ public class Hook {
     }
 
     @After
-    public static void closeBrowser() throws Exception {
+    public static void closeBrowser() {
         Driver.webDriver.quit();
     }
 }
